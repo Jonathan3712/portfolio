@@ -58,7 +58,7 @@
                 <img src="images/home_img1.webp" alt="image" class="home__img">
 
                 <div class="home__data">
-                    <h1 class="home__name">Jonathan Raj<br> Katikala</h1>
+                    <h1 class="home__name">Jonathan<br> Katikala</h1>
                     <h3 class="home__profession">Software Developer</h3>
                 </div>
 
@@ -117,6 +117,25 @@
                         <i class="ri-arrow-right-line"></i>
                     </a>
                 </article>
+                <article class="word__card">
+                    <a href="#" target="_blank" class="work__link">
+                        <h2 class="work__title">Project 1</h2>
+                        <p class="work__description">
+                            Game-by-AI : Game developed with ChatGPT by prompting.
+                        </p>
+                        <img src="work-1.webp" alt="image" class="work__img">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article><article class="word__card">
+                    <a href="#" target="_blank" class="work__link">
+                        <h2 class="work__title">Project 1</h2>
+                        <p class="work__description">
+                            Game-by-AI : Game developed with ChatGPT by prompting.
+                        </p>
+                        <img src="work-1.webp" alt="image" class="work__img">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
                 
             </div>
          </section>
@@ -127,27 +146,27 @@
 
             <div class="info__container container grid">
                 <!-- About -->
-                <div class="about_grid">
+                <div class="about grid">
                     <div class="about__content">
                         <h3 class="info__title">About Me</h3>
                         <p class="about__description">
                             Software developer <b>Full Stack</b> and to be listed......
                         </p>
 
-                        <a href="doc/Resume.pdf" download="" target="_blank" class=" button about__button">Download Resume</a>
+                        <a href="doc/Resume.pdf" download="" target="_blank" class="button about__button">Download Resume</a>
                     </div>
                     <img src="images/home_img1.webp" alt="image" class="about__img">
                 </div>
                 <!-- Experience -->
                 <div class="experience">
                     <h3 class="info__title">EXPERIENCE</h3>
-                    <div class="experinece__content grid">
+
+                    <div class="experience__content grid">
                         <div class="experience__data grid">
                             <h2 class="experience__company">ChatGPT</h2>
-
                             <div>
                                 <h3 class="experience__profession">Web Designer</h3>
-                                <span class="experience__data">01/01 - present</span><p class="experience__description">
+                                <span class="experience__date">01/01 - present</span><p class="experience__description">
                                     Web designer of the company pages.
                                 </p>
                             </div>
@@ -157,11 +176,22 @@
                             
                             <div>
                                 <h3 class="experience__profession">Web Designer</h3>
-                                <span class="experience__data">01/01 - present</span><p class="experience__description">
+                                <span class="experience__date">01/01 - present</span><p class="experience__description">
                                     Web designer of the company pages.
                                 </p>
                             </div>
-                        </div><div class="experience__data grid">
+                        </div>
+                        <div class="experience__data grid">
+                            <h2 class="experience__company">Adobe</h2>
+                            
+                            <div>
+                                <h3 class="experience__profession">Web Designer</h3>
+                                <span class="experience__date">01/01 - present</span><p class="experience__description">
+                                    Web designer of the company pages.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <div class="experience__data grid">
                             <h2 class="experience__company">Adobe</h2>
                             
                             <div>
@@ -170,7 +200,8 @@
                                     Web designer of the company pages.
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
+                       
                     </div>
                 </div>
                 <!-- Skills -->
@@ -277,7 +308,7 @@
                     <textarea name="user_message" placeholder="Message" required class="contact__input contact__area"></textarea>
                     <button type="submit" class="button contact__button">Send Message</button>
 
-                    <p class="contact__message" id="contact-message"></p>
+                    <p class="contact__message" id="contact-message">Message</p>
                 </form>
 
 
@@ -324,7 +355,7 @@
       </a>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
 
       <!--=============== EMAIL JS ===============-->
       <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
