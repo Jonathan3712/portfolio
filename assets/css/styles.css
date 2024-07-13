@@ -203,7 +203,7 @@ img {
     transition: color .4s;
 }
 
-.nav__link::after{
+/* .nav__link::after{
     content: '';
     width: 0;
     height: 2px;
@@ -212,14 +212,14 @@ img {
     left: 0;
     bottom: -.5rem;
     transition: width .3s;
-}
+} */
 
 .nav-link:hover{
     color: var(--first-color-light);
 }
-.nav-link:hover::after{
+/* .nav-link:hover::after{
     width: 30%;
-}
+} */
 
 .nav__close{
     position: absolute;
@@ -250,9 +250,9 @@ img {
     color: var(--first-color-light);
 }
 
-.active-link::after{
+/* .active-link::after{
     width: 30%;
-}
+} */
 
 /*=============== HOME ===============*/
 .home__container{
@@ -279,7 +279,7 @@ img {
     color: var(--text-color);
 }
 
-.home__profession::after{
+/* .home__profession::after{
     content: '';
     position: absolute;
     left: 0;
@@ -287,7 +287,7 @@ img {
     width: 25%;
     height: 3px;
     background-color: var(--text-color);
-}
+} */
 
 .home__scroll{
     color: var(--title-color);
@@ -402,7 +402,7 @@ img {
     margin-bottom: 2rem;
 }
 
-.info__title::after{
+/* .info__title::after{
     content: '';
     position: absolute;
     left: 0;
@@ -410,7 +410,7 @@ img {
     width: 20px;
     height: 2px;
     background-color: var(--text-color);
-}
+} */
 
 /* ABOUT */
 .about{
@@ -639,11 +639,17 @@ img {
     .home__container,
     .work__container,
     .info__container,
-    .services__container,
-    .contact__container{
+    .contact__container,
+    .services__container{
         grid-template-columns: 350px;
         justify-content: center;
     }
+    .services__container{
+        grid-template-columns: repeat(2, 320px);
+        /* gap: 6rem 13rem; */
+        margin-left: 15rem;
+    }
+
 }
 
 @media screen and (min-width: 768px){
@@ -734,10 +740,10 @@ img {
     .hom__name{
         margin-bottom: 1.5rem;
     }
-    .home__profession::after{
+    /* .home__profession::after{
         bottom: -1rem;
         width: 35%;
-    }
+    } */
     .work__container{
         grid-template-columns: repeat(2, 540px);
         gap: 2.5rem;
@@ -757,6 +763,7 @@ img {
     }
     .info__title{
         font-size: var(--normal-font-size);
+        margin-bottom: 1rem;
         column-gap: 3.5rem;
     }
     .about{
@@ -795,11 +802,12 @@ img {
         margin-bottom: 1.5rem;
     }
     .skills__content{
-        grid-template-columns: repeat(6, max-content);
+        grid-template-columns: repeat(8, max-content);
     }
     .service__container{
         grid-template-columns: repeat(2, 350px);
         gap: 6rem 13rem;
+        padding-left: 10rem;    
     }
     .services_icon{
         font-size: 2.5rem;
@@ -823,7 +831,7 @@ img {
         bottom: 4.5rem;
     }
     .contact__social{
-        grid-template-columns: repeat(3, max-content);
+        grid-template-columns: repeat(2, max-content);
         column-gap: 5rem;
     }
     .footer__container{
@@ -838,5 +846,4 @@ img {
     .scrollup{
         right: 3rem;
     }
-
 }
