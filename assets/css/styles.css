@@ -374,6 +374,9 @@ img {
 .work__link:hover i{
     transform: translateX(.5rem);
 }
+.work__img{
+    max-width: 50%;
+}
 
 /*=============== WORKS ===============*/
 .button{
@@ -645,7 +648,7 @@ img {
         justify-content: center;
     }
     .services__container{
-        grid-template-columns: repeat(2, 320px);
+        grid-template-columns: repeat(3, 320px);
         /* gap: 6rem 13rem; */
         margin-left: 15rem;
     }
