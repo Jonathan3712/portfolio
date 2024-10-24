@@ -769,6 +769,11 @@ img {
         margin-bottom: 1rem;
         column-gap: 3.5rem;
     }
+    .margin1{
+        margin: 5%;
+        text-align: justify;
+        float: right;
+    }
     .about{
         grid-template-columns: 320px 420px;
         column-gap: 11.5rem;
@@ -779,7 +784,7 @@ img {
         padding-top: 2rem; */
     }
     .about__description{
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
     .about__button{
         width: initial;
