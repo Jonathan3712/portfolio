@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - 3</title>
+     <!--=============== FAVICON ===============-->
+     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+     <!--=============== REMIXICONS ===============-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+     <!--=============== CSS ===============-->
+     <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<style>
+    body{
+        background-color: #191e39;
+    }
+    .text1{
+        margin: 4%;
+        color: #fff;
+    }
+    .text3{
+        line-height: 1px;
+    }
+    .text5{
+        padding: 1% 0% 5% 0%;
+    }
+    .header1 {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1f2547;
+    z-index: var(--z-fixed);
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<body>
+    <header class="header1">
+        <nav class="nav container">
+           <a href="index.html" class="nav__logo">Jonathan Raj</a>
+
+           <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                   <li>
+                       <a href="index.html#home" class="nav__link">Home</a>
+                   </li>
+                   <li>
+                       <a href="index.html#info" class="nav__link">My Info</a>
+                   </li>
+                   <li>
+                       <a href="index.html#info" class="nav__link">Resume</a>
+                   </li>
+                   <li> 
+                       <a href="index.html#contact" class="nav__link">Contact</a>
+                   </li>
+               </ul>
+
+               <!-- close button -->
+               <div class="nav__close" id="nav-close">
+                   <i class="ri-close-large-line"></i>
+               </div>
+           </div>
+
+           <!-- Toggle button -->
+           <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+           </div>
+        </nav>
+     </header>
+     <br> <br> 
+    <div class="text1">
+        <h2 class="text2">AWS DeepRacer</h2>
+        <p class="text3">
+            <h3>Using AWS DeepRacer to Construct an Autonomous Racing Model
+            Overview</h3>
+            <span class="text4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this project, I created and trained a reinforcement learning (RL) model that can navigate a virtual racetrack on its own using the AWS DeepRacer platform. For both novice and seasoned machine learning practitioners, the DeepRacer platform offers an easy-to-use setting for investigating and utilizing RL concepts.</span>
+        </p>
+        <p class="text5">
+            Model Development
+
+Environment Setup:
+
+Created an AWS account and accessed the DeepRacer console.
+Selected a virtual race track to serve as the training environment.
+Configured the simulation parameters, including track length, width, and surface conditions.
+Reward Function Design:
+
+Defined a reward function to guide the model's learning process.
+The reward function incentivized behaviors such as staying on track, maintaining high speed, and completing laps.
+Penalized actions like hitting walls, driving off the track, and low speeds.
+Model Training:
+
+Initiated the training process using the configured reward function.
+Monitored the model's performance through training logs and visualizations.
+Iteratively refined the reward function and training parameters to improve performance.
+Model Evaluation:
+
+Deployed the trained model to the virtual race track for evaluation.
+Analyzed the model's performance metrics, including lap time, track completion rate, and stability.
+Identified areas for further improvement based on evaluation results.
+Key Challenges and Solutions
+
+Reward Function Engineering: Designing a reward function that effectively captures the desired behaviors and avoids unintended consequences was a significant challenge. Experimentation with different reward function components and hyperparameters was crucial.
+Hyperparameter Tuning: Optimizing hyperparameters like learning rate, discount factor, and exploration rate impacted the model's convergence speed and final performance. Grid search and Bayesian optimization techniques were employed to explore the hyperparameter space efficiently.
+Overfitting and Underfitting: Balancing the model's ability to generalize to unseen scenarios while avoiding overfitting to the training data was essential. Regularization techniques and early stopping were used to mitigate these issues.
+Future Work
+
+Advanced RL Techniques: Explore more advanced RL algorithms, such as Proximal Policy Optimization (PPO) and Deep Deterministic Policy Gradients (DDPG), to further enhance the model's performance.
+Transfer Learning: Leverage transfer learning to accelerate training on new tracks by utilizing knowledge gained from previous training experiences.
+Real-World Deployment: Consider the challenges and opportunities of deploying the model to a physical AWS DeepRacer car, including sensor calibration, actuator control, and safety considerations.
+Conclusion
+
+Building an autonomous racing model with AWS DeepRacer provides a valuable hands-on experience in reinforcement learning. By effectively designing reward functions, training models, and evaluating performance, it is possible to create models that exhibit impressive driving skills on virtual race tracks. Future research and development in this area hold the potential to advance the field of autonomous vehicle technology.
+        </p>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="index.html#home" class="footer__link">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#work" class="footer__link">Projects</a>
+                </li>
+                <li>
+                    <a href="index.html#info" class="footer__link">Info</a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; All Rights Reserved By Github & Jonathan
+            </span>
+
+        </div>
+      </footer>
+
+</body>
+</html>
