@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project - 5</title>
+    <title>Project - 3</title>
      <!--=============== FAVICON ===============-->
      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
@@ -14,8 +14,17 @@
      <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <style>
+    html{
+        min-height: 100vh;
+        height: 100%;
+        margin: 0;
+    }
     body{
         background-color: #191e39;
+        min-height: 100vh;
+        position: relative;
+        height: 100%;
+        /* margin: 0; */
     }
     .text1{
         margin: 4%;
@@ -23,6 +32,9 @@
     }
     .text3{
         line-height: 1px;
+    }
+    .text5{
+        padding: 1% 0% 5% 0%;
     }
     .header1 {
     position: fixed;
@@ -33,7 +45,7 @@
     z-index: var(--z-fixed);
 }
 .footer{
-    position: fixed;
+    /* position: absolute; */
     left: 0;
     bottom: 0;
     width: 100%;
@@ -73,21 +85,44 @@
         </nav>
      </header>
      <br> <br> 
-    <!-- <div class="text1">
-        <h2 class="text2">Title</h2>
-        <p class="text3">
-            <h3>Heading</h3>
-            <span class="text4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sub Heading</span>
-        </p>
-        <p class="text5">
-            body
-            
-            
-            
-            
-           
-        </p>
-    </div> -->
+    <div class="text1">
+        <h2>AWS DeepRacer Project</h2>
+
+        <p>Developed and trained a reinforcement learning (RL) model for autonomous racing on the AWS DeepRacer platform.</p>
+        <p>This platform provides a 3D racing simulator, a 1/18th scale autonomous RC car, and a global racing league. It allows users to train and evaluate RL models in a simulated environment and then deploy them to the physical car.</p>
+
+        <p class="space1"><strong>AWS DeepRacer</strong>: This platform provides a 3D racing simulator, a 1/18th scale autonomous RC car, and a global racing league. It allows users to train and evaluate RL models in a simulated environment and then deploy them to the physical car.</p>
+      
+        <p class="space1"><strong>Reinforcement Learning (RL)</strong>: This is a type of machine learning where an agent learns to take actions in an environment to maximize a reward signal. In the DeepRacer context, the agent is the race car, the environment is the virtual or physical race track, and the actions are steering and speed.</p>
+      
+        <p class="space1"><strong>Project Goal</strong>: To develop an RL model that can successfully navigate a virtual race track autonomously by learning from its interactions with the environment. This involves designing a reward function (which defines what constitutes "good" behavior for the car), training the model through iterative improvements, and evaluating its performance.</p>
+      
+        <p>This project provides a hands-on learning experience in RL concepts and their application in a real-world scenario (albeit simulated). It also allows users to explore advanced techniques like hyperparameter tuning, model optimization, and potential real-world deployment challenges.</p>
+  
+
+  <h3> Key Steps:</h3>
+  <ul>
+    <li>&emsp; Environment setup and parameter configuration.</li>
+    <li>&emsp; Reward function design to incentivize optimal driving behavior.</li>
+    <li>&emsp; Model training and iterative refinement.</li>
+    <li>&emsp; Model evaluation and performance analysis.</li>
+  </ul>
+
+  <h3>Challenges:</h3>
+  <ul>
+    <li>&emsp; Reward function engineering.</li>
+    <li>&emsp; Hyperparameter tuning.</li>
+    <li>&emsp; Overfitting/underfitting mitigation.</li>
+  </ul>
+
+  <h3>Future Directions:</h3>
+  <ul>
+    <li>&emsp; Exploring advanced RL algorithms.</li>
+    <li>&emsp; Implementing transfer learning.</li>
+    <li>&emsp; Investigating real-world deployment.</li>
+  </ul>
+
+    </div>
 
     <footer class="footer">
         <div class="footer__container container grid">
@@ -109,6 +144,7 @@
 
         </div>
       </footer>
-
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
