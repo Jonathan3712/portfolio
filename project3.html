@@ -14,8 +14,20 @@
      <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <style>
+    html{
+        min-height: 100vh;
+        height: 100%;
+        margin: 0;
+    }
     body{
         background-color: #191e39;
+        min-height: 100vh;
+        position: relative;
+        height: 100%;
+        /* margin: 0; */
+    }
+    h2, h3{
+        color: red;
     }
     .text1{
         margin: 4%;
@@ -36,7 +48,7 @@
     z-index: var(--z-fixed);
 }
 .footer{
-    position: fixed;
+    /* position: absolute; */
     left: 0;
     bottom: 0;
     width: 100%;
@@ -77,49 +89,42 @@
      </header>
      <br> <br> 
     <div class="text1">
-        <h2 class="text2">AWS DeepRacer</h2>
-        <p class="text3">
-            <h3>Using AWS DeepRacer to Construct an Autonomous Racing Model
-            Overview</h3>
-            <span class="text4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this project, I created and trained a reinforcement learning (RL) model that can navigate a virtual racetrack on its own using the AWS DeepRacer platform. For both novice and seasoned machine learning practitioners, the DeepRacer platform offers an easy-to-use setting for investigating and utilizing RL concepts.</span>
-        </p>
-        <p class="text5">
-            Model Development
+        <h2>AWS DeepRacer Project</h2>
 
-Environment Setup:
+        <p>Developed and trained a reinforcement learning (RL) model for autonomous racing on the AWS DeepRacer platform.</p>
+        <p>This platform provides a 3D racing simulator, a 1/18th scale autonomous RC car, and a global racing league. It allows users to train and evaluate RL models in a simulated environment and then deploy them to the physical car.</p>
 
-Created an AWS account and accessed the DeepRacer console.
-Selected a virtual race track to serve as the training environment.
-Configured the simulation parameters, including track length, width, and surface conditions.
-Reward Function Design:
+        <p class="space1"><strong>AWS DeepRacer</strong>: This platform provides a 3D racing simulator, a 1/18th scale autonomous RC car, and a global racing league. It allows users to train and evaluate RL models in a simulated environment and then deploy them to the physical car.</p>
+      
+        <p class="space1"><strong>Reinforcement Learning (RL)</strong>: This is a type of machine learning where an agent learns to take actions in an environment to maximize a reward signal. In the DeepRacer context, the agent is the race car, the environment is the virtual or physical race track, and the actions are steering and speed.</p>
+      
+        <p class="space1"><strong>Project Goal</strong>: To develop an RL model that can successfully navigate a virtual race track autonomously by learning from its interactions with the environment. This involves designing a reward function (which defines what constitutes "good" behavior for the car), training the model through iterative improvements, and evaluating its performance.</p>
+      
+        <p>This project provides a hands-on learning experience in RL concepts and their application in a real-world scenario (albeit simulated). It also allows users to explore advanced techniques like hyperparameter tuning, model optimization, and potential real-world deployment challenges.</p>
+  
 
-Defined a reward function to guide the model's learning process.
-The reward function incentivized behaviors such as staying on track, maintaining high speed, and completing laps.
-Penalized actions like hitting walls, driving off the track, and low speeds.
-Model Training:
+  <h3> Key Steps:</h3>
+  <ul>
+    <li>&emsp; Environment setup and parameter configuration.</li>
+    <li>&emsp; Reward function design to incentivize optimal driving behavior.</li>
+    <li>&emsp; Model training and iterative refinement.</li>
+    <li>&emsp; Model evaluation and performance analysis.</li>
+  </ul>
 
-Initiated the training process using the configured reward function.
-Monitored the model's performance through training logs and visualizations.
-Iteratively refined the reward function and training parameters to improve performance.
-Model Evaluation:
+  <h3>Challenges:</h3>
+  <ul>
+    <li>&emsp; Reward function engineering.</li>
+    <li>&emsp; Hyperparameter tuning.</li>
+    <li>&emsp; Overfitting/underfitting mitigation.</li>
+  </ul>
 
-Deployed the trained model to the virtual race track for evaluation.
-Analyzed the model's performance metrics, including lap time, track completion rate, and stability.
-Identified areas for further improvement based on evaluation results.
-Key Challenges and Solutions
+  <h3>Future Directions:</h3>
+  <ul>
+    <li>&emsp; Exploring advanced RL algorithms.</li>
+    <li>&emsp; Implementing transfer learning.</li>
+    <li>&emsp; Investigating real-world deployment.</li>
+  </ul>
 
-Reward Function Engineering: Designing a reward function that effectively captures the desired behaviors and avoids unintended consequences was a significant challenge. Experimentation with different reward function components and hyperparameters was crucial.
-Hyperparameter Tuning: Optimizing hyperparameters like learning rate, discount factor, and exploration rate impacted the model's convergence speed and final performance. Grid search and Bayesian optimization techniques were employed to explore the hyperparameter space efficiently.
-Overfitting and Underfitting: Balancing the model's ability to generalize to unseen scenarios while avoiding overfitting to the training data was essential. Regularization techniques and early stopping were used to mitigate these issues.
-Future Work
-
-Advanced RL Techniques: Explore more advanced RL algorithms, such as Proximal Policy Optimization (PPO) and Deep Deterministic Policy Gradients (DDPG), to further enhance the model's performance.
-Transfer Learning: Leverage transfer learning to accelerate training on new tracks by utilizing knowledge gained from previous training experiences.
-Real-World Deployment: Consider the challenges and opportunities of deploying the model to a physical AWS DeepRacer car, including sensor calibration, actuator control, and safety considerations.
-Conclusion
-
-Building an autonomous racing model with AWS DeepRacer provides a valuable hands-on experience in reinforcement learning. By effectively designing reward functions, training models, and evaluating performance, it is possible to create models that exhibit impressive driving skills on virtual race tracks. Future research and development in this area hold the potential to advance the field of autonomous vehicle technology.
-        </p>
     </div>
 
     <footer class="footer">
@@ -142,6 +147,7 @@ Building an autonomous racing model with AWS DeepRacer provides a valuable hands
 
         </div>
       </footer>
-
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
