@@ -164,6 +164,11 @@ img {
     color: var(--title-color);
     font-weight: var(--font-bold);
 }
+.nav__logo1{
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    text-align: center;
+}
 
 .nav__toggle, 
 .nav__close{
@@ -254,6 +259,17 @@ img {
     width: 30%;
 } */
 
+.text1{
+    padding: 1%;
+    line-height: 2;
+}
+.text2{
+    padding-left: 2%;
+    line-height: 1.1;
+}
+.space1{
+    margin: 0.7%;
+}
 /*=============== HOME ===============*/
 .home__container{
     row-gap: 2rem;
@@ -634,6 +650,9 @@ img {
 @media screen and (max-width: 300px){
     .container{
         margin-inline: 1 rem;
+    }
+    .text5{
+        padding: 1% 0% 10% 0%;
     }
 }
 
