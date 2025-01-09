@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - 1</title>
+     <!--=============== FAVICON ===============-->
+     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+     <!--=============== REMIXICONS ===============-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+     <!--=============== CSS ===============-->
+     <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<style>
+    html{
+        min-height: 100vh;
+        height: 100%;
+        margin: 0;
+    }
+    body{
+        background-color: #191e39;
+        min-height: 100vh;
+        position: relative;
+        height: 100%;
+        /* margin: 0; */
+    }
+    h2, h3{
+        color: red;
+    }
+    .text1{
+        margin: 4%;
+        color: #fff;
+    }
+    .text3{
+        line-height: 1px;
+    }
+    .text5{
+        padding: 1% 0% 5% 0%;
+    }
+    .header1 {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1f2547;
+    z-index: var(--z-fixed);
+}
+.footer{
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<body>
+    <header class="header1">
+        <nav class="nav container">
+           <a href="index.html" class="nav__logo">Jonathan Raj</a>
+
+           <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                   <li>
+                       <a href="index.html#home" class="nav__link">Home</a>
+                   </li>
+                   <li>
+                       <a href="index.html#info" class="nav__link">My Info</a>
+                   </li>
+                   <li>
+                       <a href="index.html#info" class="nav__link">Resume</a>
+                   </li>
+                   <li> 
+                       <a href="index.html#contact" class="nav__link">Contact</a>
+                   </li>
+               </ul>
+
+               <!-- close button -->
+               <div class="nav__close" id="nav-close">
+                   <i class="ri-close-large-line"></i>
+               </div>
+           </div>
+
+           <!-- Toggle button -->
+           <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+           </div>
+        </nav>
+     </header>
+     <br> <br> 
+     <div>
+    <div class="text1">
+        <h2>Game Developed with Prompt Engineering</h2>
+
+        <p>Developed and trained a reinforcement learning (RL) model for autonomous racing on the AWS DeepRacer platform.</p>
+        <p>This platform provides a 3D racing simulator, a 1/18th scale autonomous RC car, and a global racing league. It allows users to train and evaluate RL models in a simulated environment and then deploy them to the physical car.</p>
+
+        <p class="space1"><strong>AWS DeepRacer</strong>: This platform provides a 3D racing simulator, a 1/18th scale autonomous RC car, and a global racing league. It allows users to train and evaluate RL models in a simulated environment and then deploy them to the physical car.</p>
+      
+        <p class="space1"><strong>Reinforcement Learning (RL)</strong>: This is a type of machine learning where an agent learns to take actions in an environment to maximize a reward signal. In the DeepRacer context, the agent is the race car, the environment is the virtual or physical race track, and the actions are steering and speed.</p>
+      
+        <p class="space1"><strong>Project Goal</strong>: To develop an RL model that can successfully navigate a virtual race track autonomously by learning from its interactions with the environment. This involves designing a reward function (which defines what constitutes "good" behavior for the car), training the model through iterative improvements, and evaluating its performance.</p>
+      
+        <p>This project provides a hands-on learning experience in RL concepts and their application in a real-world scenario (albeit simulated). It also allows users to explore advanced techniques like hyperparameter tuning, model optimization, and potential real-world deployment challenges.</p>
+  
+
+  <h3> Key Steps:</h3>
+  <ul>
+    <li>&emsp; Environment setup and parameter configuration.</li>
+    <li>&emsp; Reward function design to incentivize optimal driving behavior.</li>
+    <li>&emsp; Model training and iterative refinement.</li>
+    <li>&emsp; Model evaluation and performance analysis.</li>
+  </ul>
+
+  <h3>Challenges:</h3>
+  <ul>
+    <li>&emsp; Reward function engineering.</li>
+    <li>&emsp; Hyperparameter tuning.</li>
+    <li>&emsp; Overfitting/underfitting mitigation.</li>
+  </ul>
+
+  <h3>Future Directions:</h3>
+  <ul>
+    <li>&emsp; Exploring advanced RL algorithms.</li>
+    <li>&emsp; Implementing transfer learning.</li>
+    <li>&emsp; Investigating real-world deployment.</li>
+  </ul>
+  
+    </div>
+    <article class="word__card">
+        <a href="https://github.com/Jonathan3712/game-by-AI" class="work__link">
+            <h2 class="work__title">Github Link for Project Documetation</h2>
+            <p class="work__description">
+                Role Management Portal : A small company where roles are assigned, managed, viewed as per their respective positions. 
+            </p>
+            <!-- <img src="images/prompt.svg" alt="image" class="work__img"> -->
+            <i class="ri-arrow-right-line"></i>
+        </a>
+    </article>
+</div>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="index.html#home" class="footer__link">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#work" class="footer__link">Projects</a>
+                </li>
+                <li>
+                    <a href="index.html#info" class="footer__link">Info</a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; All Rights Reserved By Github & Jonathan
+            </span>
+
+        </div>
+      </footer>
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
